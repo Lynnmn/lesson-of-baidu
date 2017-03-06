@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #5D5D5D;
+}
+.wrap{
+	width: 980px;
+	height: 1386px;
+	background: #fff;
+	margin: 120px auto;
+	padding: 0 44px;
+	box-sizing: border-box;
+}
+.header{
+	width: 892px;
+    font-size: 0;
+    border-bottom: 2px solid #938e8c;
+    overflow: hidden;
+}
+.logo{
+	display: inline-block;
+    width: 110px;
+    height: 61px;
+    background: #D55D5C;
+    color: #fff;
+    /* text-align: center; */
+    font-size: 12px;
+    font-family: SimHei;
+    line-height: 107px;
+    padding-left: 6px;
+    box-sizing: border-box;
+}
+.date{
+	font-size: 12px;
+    color: #d45d5c;
+    float: right;
+    margin-top: 47px;
+    font-family: SimHei;
+}
+.top{
+	display: flex;
+	display: -webkit-flex;
+	margin: 20px 0;
+	justify-content: space-between;
+}
+.top-left{
+	display: inline-block;
+	position: relative;
+	flex: 0 0 641px;
+	height: 301px;
+	background: url(../img/img1.png);
+}
+.mask-green,.mask-red{
+	width: 191px;
+    height: 301px;
+    background: rgba(65,140,88,.5);
+    position: absolute;
+}
+.mask-red{
+	background: rgba(204,118,128,.5);
+	right: 0;
+}
+.top-right{
+	position: relative;
+    display: inline-block;
+	width: 203px;
+	height: 301px;
+	border-top: 2px solid #cc8091;
+	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.top-right p:nth-child(1),.top-right p:nth-child(2){
+    font-size: 24px;
+    color: #000;
+    text-decoration: underline;
+}
+.top-right p:nth-child(1) span,.top-right p:nth-child(2) span{
+	font-size: 28px;
+}
+.top-right p:nth-child(3){
+	color: #676767;
+    font-size: 12px;
+    font-family: '楷体';
+    line-height: 10px;
+}
+.top-right > span:nth-of-type(1){
+	font-size: 116px;
+    color: #75b86b;
+    font-style: italic;
+}
+.top-right > span:nth-of-type(2){
+	color: #cc8091;
+	font-size: 55px;
+	display: inline-block;
+	margin-top: -10px;
+}
+.top-right > span:nth-of-type(3){
+	color: #cc8091;
+	font-size: 21px;
+	position: relative;
+	top: -10px;
+	left: 3px;
+}
+.top-right > span:nth-of-type(4){
+	color: #cc8091;
+	font-size: 12px;
+	position: relative;
+	left: -30px;
+}
+.middle{
+	width: 641px;
+	display: -webkit-flex;
+	display: flex;
+}
+.middle > div{
+	-webkit-flex:1;
+	flex: 1;
+}
+.what{
+	margin-right: 30px;
+}
+.when,.how{
+	margin-left: 30px;
+}
+.what-title, .when-title, .how-title{
+	font-size: 16px;
+	color: #418c59;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: 10px;
+} 
+.when-title{
+	color:#d2994f;
+}
+.how-title{
+	color: #cc7680;
+}
+.middle > div > p{
+	font-size: 12px;
+	color: #767777;
+	font-family: '宋体';
+	line-height: 16px;
+	margin-top: 10px;
+}
+.how-per{
+	width: 155px;
+	opacity: 0.7;
+	font-size: 12px;
+	color: #231815;
+    line-height: 16px;
+    margin: 15px 0 0 10px;
+}
+.how-per > span:nth-child(even){
+	color: #cd4a48;
+	font-style: italic;
+}
+.bottom{
+	margin-top: 40px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.bottom-left{
+	flex: 0 0 415px;
+}
+.bottom .title, .bottom-left > span{
+	font-family: '黑体';
+	font-size: 42px;
+	color: #11456b;
+	font-weight: bold;
+}
+.bottom .title > span{
+    font-size: 72px;
+    color: #f5e327;
+    font-style: italic;
+}
+.bottom-left .content{
+	width: 415px;
+	border-top: 2px solid #11456b;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+.bottom-left .content > div{
+	font-size: 12px;
+	color: #767777;
+	line-height: 16px;
+}
+.bottom-left .content > div > span{
+	font-size: 70px;
+    color: #f5e327;
+    float: left;
+    display: inline-block;
+    width: 74px;
+    height: 37px;
+    margin-top: 28px;
+}
+.bottom-left .content > div > p{
+	text-align: justify;
+	text-indent: 2em;
+}
+.bottom-left .content img{
+	float: right;
+    margin: 10px 0 6px 15px;
+    display: inline-block;
+    width: 167px;
+    height: 288px;
+}
+.bottom-right{
+	flex: 0 0 458px;
+}
+.bottom-right > div:nth-child(1){
+	background: url(../img/img3.png);
+	width: 458px;
+	height: 275px;
+	background-size: cover;
+	position: relative;
+}
+.bottom-right .mask{
+	width: 458px;
+	height: 61px;
+	background: rgba(4,0,0,.5);
+	position: absolute;
+	bottom: 0;
+}
+.bottom-right .mask > span{
+	display: inline-block;
+    height: 44px;
+    border-left: 3px solid #72b16a;
+    margin-left: 30px;
+    margin-top: 10px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 26px;
+}
+.bottom-right .mask > span sub{
+	font-size: 12px;
+	color: #72b16a;
+	font-style: italic;
+	line-height: 140%;
+}
+.bottom-right-bottom{
+	width: 459px;
+	height: 318px;
+	background: #EEEED6;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.bottom-right-bottom ul{
+	list-style: none;
+    color: #5a5b5b;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.bottom-right-bottom ul li{
+	margin:20px 0;
+}
+.bottom-right-bottom > div:nth-of-type(1){
+	width: 260px;
+    height: 160px;
+    background: #D55D5C;
+    display: inline-block;
+    margin-top: 18px;
+    box-sizing: border-box;
+}
+.bottom-right-bottom > div:nth-of-type(2){
+	display: inline-block;
+	width: 170px;
+	position: relative;
+}
+.bottom-right-bottom > div:nth-of-type(1) > span{
+	font-size: 110px;
+    color: #fff;
+    display: inline-block;
+    border-right: 2px solid #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 20px;
+}
+.bottom-right-bottom > div:nth-of-type(1) > div{
+	display: inline-block;
+	width: 180px;
+}
+.bottom-right-bottom > div:nth-of-type(1) > div > p:nth-child(1){
+	font-size: 21px;
+    font-style: italic;
+    color: #fff;
+    width: 185px;
+}
+.bottom-right-bottom > div:nth-of-type(1) > div > p:nth-child(2){
+	font-size: 12px;
+    color: #fff;
+    margin-top: 10px;
+}
+.bottom-right-bottom > div:nth-of-type(2) > p{
+	font-style: italic;
+    font-size: 14px;
+    color: #5a5b5b;
+    margin-left: 10px;
+}
+.bottom-right-bottom > div:nth-of-type(2) .left-maohao{
+	font-size: 72px;
+	color: #d45d5c;
+	float: left;
+	font-style: normal;
+}
+.bottom-right-bottom > div:nth-of-type(2) .right-maohao{
+	font-size: 72px;
+	color: #d45d5c;
+	float: right;
+	font-style: normal;
+}
+.footer{
+	width: 892px;
+	border-top: 1px solid #938e8c;
+	margin-top: 50px;
+	font-size: 12px;
+	color: #d45d5c;
+}
+.footer > span{
+	float: right;
+}
+
